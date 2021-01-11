@@ -1,3 +1,14 @@
 body {
     background-color: $veryLightGrey;
+    min-width: 375px;
+
+    .container {
+        width: 327px;
+        margin: 0 auto;
+
+        .flex-sb {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
