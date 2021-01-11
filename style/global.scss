@@ -1,0 +1,37 @@
+body {
+    background-color: $veryLightGrey;
+    min-width: 375px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    .sro {
+        display: none;
+    }
+
+    .container {
+        width: 327px;
+        margin: 0 auto;
+
+        .flex-sb {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .btn-lime {
+        background: $gradGreen;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        color: #FFF;
+        padding: 8px 34px;
+        border-radius: 22px;
+        border: none;
+        cursor: pointer;
+    }
+}
