@@ -1,4 +1,4 @@
-import App from './script/app';
+import Nav from './script/nav';
 import 'normalize.css'
 
-App()
+Nav()
