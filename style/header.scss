@@ -37,6 +37,10 @@ header {
                 letter-spacing: -0.138462px;
             }
         }
+
+        #header-btn {
+            display: none;
+        }
     }
 }
 
@@ -46,8 +50,8 @@ header {
     header {
 
         .in-header {
-            padding: 32px 0 0;
-            height: 100%;
+            padding: 0;
+            height: 80px;
             
             nav.menu {
                 display: grid;
@@ -56,7 +60,7 @@ header {
                 grid-template-columns: repeat(5, auto);
                 grid-template-rows: 1fr;
                 gap: 30px;
-                height: 44px;
+                height: 80px;
             
                 a {
                     color: $lightGrey;
@@ -64,6 +68,7 @@ header {
                     line-height: 16px;
                     letter-spacing: -0.107692px;
                     position: relative;
+                    padding-top: 32px;
 
                     &:hover::after {
                         content: "";
@@ -79,6 +84,14 @@ header {
                         color: $darkGrey;
                     }
                 }
+            }
+
+            #toggle {
+                display: none;
+            }
+
+            #header-btn {
+                display: block;
             }
         }
     }

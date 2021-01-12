@@ -52,11 +52,13 @@ body {
             .in-container {
                 flex-direction: row-reverse;
                 padding-bottom: 0;
+                align-items: center;
     
                 .img-block {
                     background-image: url(./assets/bg-intro-desktop.svg);
                     background-repeat: no-repeat;
                     background-position: left ;
+                    height: 656px;
     
                     img {
                         height: auto;
@@ -64,7 +66,6 @@ body {
                 }
 
                 .text-block {
-                    margin: 250px 0 170px;
                     padding-right: 28px;
                     width: 475px;
                     text-align: left;
