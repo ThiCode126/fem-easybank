@@ -35,3 +35,11 @@ body {
         cursor: pointer;
     }
 }
+
+@media (min-width: 1440px) {
+    body {
+        .container {
+            width: 1110px;
+        }
+    }
+}

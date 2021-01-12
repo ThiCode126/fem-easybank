@@ -7,6 +7,11 @@ header {
         height: 20px;
         position: relative;
 
+        #logo {
+            height: 20px;
+            width: 139px;
+        }
+
         #closeMenu {
             display: none;
         }
@@ -30,6 +35,50 @@ header {
                 font-size: 18px;
                 line-height: 21px;
                 letter-spacing: -0.138462px;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    header {
+
+        .in-header {
+            padding: 32px 0 0;
+            height: 100%;
+            
+            nav.menu {
+                display: grid;
+                position: static;
+                padding: 0;
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: 1fr;
+                gap: 30px;
+                height: 44px;
+            
+                a {
+                    color: $lightGrey;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: -0.107692px;
+                    position: relative;
+
+                    &:hover::after {
+                        content: "";
+                        position: absolute;
+                        background: $gradGreen;
+                        height: 4px;
+                        width: 100%;
+                        bottom: 0;
+                        right: 0;
+                    }
+                
+                    &:hover {
+                        color: $darkGrey;
+                    }
+                }
             }
         }
     }
