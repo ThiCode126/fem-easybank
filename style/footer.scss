@@ -1,0 +1,98 @@
+footer {
+    background-color: $darkGrey;
+    padding: 48px 0;
+
+    .in-footer {
+        display: grid;
+        gap: 32px;
+        grid-template-rows: repeat(3, auto);
+
+        .social {
+            display: grid;
+            gap: 16px;
+            justify-content: center;
+            grid-template-columns: repeat(5, 24px);
+            height: 24px;
+            margin-top: 32px;
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+
+        .link {
+            display: grid;
+            gap: 8px;
+            grid-template-columns: 1fr;
+
+            a {
+                color: #FFF;
+                font-size: 15px;
+                line-height: 26px;
+                letter-spacing: -0.234375px;
+
+                &:hover {
+                    color: $limeGreen;
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: -0.234375px;
+            color: #FFF;
+            opacity: 0.5;
+            margin: 24px 0 0;
+        }
+        
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    footer {
+
+        .in-footer {
+            gap: 0;
+            grid-template-columns: 285px 350px auto;
+
+            .social {
+                grid-template-columns: repeat(5, 20px);
+                height: 20px;
+                margin-top: 55px;
+                justify-content: start;
+    
+                img {
+                    transform: scale(1);
+                }
+            }
+
+            .link {
+                //margin-left: 131px;
+                gap: 8px 30px;
+                grid-template-columns: repeat(2, 94px);
+                grid-template-rows: repeat(3, 26px);
+                grid-auto-flow: column;
+    
+                a {
+                    color: #FFF;
+                    font-size: 15px;
+                    line-height: 26px;
+                    letter-spacing: -0.234375px;
+    
+                    &:hover {
+                        color: $limeGreen;
+                    }
+                }
+            }
+
+            .footer-end {
+                justify-self: right;
+                text-align: right;
+            }
+        }
+
+    }
+}
