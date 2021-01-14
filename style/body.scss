@@ -141,6 +141,11 @@ body {
     body {
         section#index {
 
+            .container {
+                width: 1265px;
+                padding-left: 165px;
+            }
+
             .in-container {
                 flex-direction: row-reverse;
                 padding-bottom: 0;
@@ -149,11 +154,18 @@ body {
                 .img-block {
                     background-image: url(./assets/bg-intro-desktop.svg);
                     background-repeat: no-repeat;
-                    background-position: left ;
+                    background-position: left bottom 25%;
+                    background-size: 1371px 961px;
+                    position: relative;
                     height: 656px;
+                    width: 800px;
+                    text-align: right;
     
                     img {
-                        height: auto;
+                        width: 617px;
+                        height: 779px;
+                        object-position: bottom left;
+                        object-fit: none;
                     }
                 }
 
